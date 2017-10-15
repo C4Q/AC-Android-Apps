@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="c4q.nyc.androidlayoutsxml.MainActivity">
@@ -9,13 +10,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorAccent"
         android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
 
 </LinearLayout>
 
-    <!--
-    * Changed layout by simply replacing constraint with LinearLayout
-    * Orientation is vertical by default
-    * Notice how text is flown to the top of the page
+<!-- Let's mess with some attributes!
 
-    -->
+* padding is space within a box while margin is space outside the box
+* android:padding applies the same dimension to paddingTop, left, bottom and right
+* android:layout_margin applies the same dimension to marginLeft, marginTop, Bottom and  Right.
+* we gave the view a background to help visualize the space created by padding vs margin.
+* open this in designer view and mess with the dimensions
+
+-->
