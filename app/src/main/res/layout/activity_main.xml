@@ -6,6 +6,7 @@
     tools:context="c4q.nyc.androidlayoutsxml.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
@@ -13,7 +14,7 @@
 </LinearLayout>
 
     <!--
-    * Changed layout by simply replacing contrainst with LinearLayout
+    * Changed layout by simply replacing constraint with LinearLayout
     * Orientation is vertical by default
     * Notice how text is flown to the top of the page
 
